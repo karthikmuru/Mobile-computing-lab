@@ -11,23 +11,23 @@
     tools:context="karthik.ex1a.SecondActivity">
 
     <TextView
-        android:text="Register Number : "
+        android:text="Reg. Number : "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
         android:layout_marginStart="22dp"
         android:layout_marginTop="84dp"
-        android:id="@+id/reg" />
+        android:id="@+id/textView1" />
 
     <TextView
         android:text="Date of Birth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
-        android:id="@+id/dob"
-        android:layout_below="@+id/reg"
-        android:layout_alignStart="@+id/reg" />
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView1"
+        android:layout_alignStart="@+id/textView1" />
 
     <TextView
         android:text="Enter Details"
@@ -43,7 +43,86 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="29dp"
+        android:id="@+id/tvName"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
         android:id="@+id/name"
-        android:layout_below="@+id/dob"
-        android:layout_alignStart="@+id/dob" />
+        android:layout_alignBaseline="@+id/tvName"
+        android:layout_alignBottom="@+id/tvName"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView1"
+        android:layout_alignStart="@+id/tvDob" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/dept"
+        android:layout_alignBaseline="@+id/tvDept"
+        android:layout_alignBottom="@+id/tvDept"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/name" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/year"
+        android:layout_alignBaseline="@+id/tvYear"
+        android:layout_alignBottom="@+id/tvYear"
+
+        android:layout_alignStart="@+id/dept" />
+
+    <TextView
+        android:text=" "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView1"
+        android:id="@+id/tvReg"
+        android:layout_alignStart="@+id/Title" />
+
+    <TextView
+        android:text=" "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:id="@+id/tvDob"
+        android:layout_alignStart="@+id/tvReg" />
+
+    <TextView
+        android:text="Department : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDept"
+        android:layout_below="@+id/name"
+        android:layout_alignStart="@+id/tvName"
+        android:layout_marginTop="21dp" />
+
+    <TextView
+        android:text="Year : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:id="@+id/tvYear"
+        android:layout_below="@+id/dept"
+        android:layout_alignStart="@+id/tvDept" />
+
+    <Button
+        android:text="Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/year"
+        android:layout_toEndOf="@+id/tvDob"
+        android:layout_marginTop="23dp"
+        android:id="@+id/Next" />
+
+
 </RelativeLayout>

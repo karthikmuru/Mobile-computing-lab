@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="karthik.ex1a">
+    package="com.falcon.karthik.shapes">
 
     <application
         android:allowBackup="true"
@@ -15,14 +15,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SecondActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.DETAILS" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".ThirdActivity"></activity>
     </application>
 
 </manifest>
