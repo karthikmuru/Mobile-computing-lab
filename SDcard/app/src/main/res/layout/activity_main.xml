@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/fileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="File Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/contents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fileName"
+        android:layout_marginTop="105dp"
+        android:ems="10"
+        android:hint="contentes of the file to be written"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/write"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="86dp"
+        android:text="Write"
+        android:layout_below="@+id/contents"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/read"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="59dp"
+        android:text="Read"
+        android:layout_alignBaseline="@+id/write"
+        android:layout_alignBottom="@+id/write"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
